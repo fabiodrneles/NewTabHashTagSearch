@@ -1,0 +1,102 @@
+/*------------------Navigation Bar------------------*/
+
+.navbar {
+    width: 100vw;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #0a17445b 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 29px #5538EE1F;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 1;
+}
+
+.navbar .links_navbar,
+.navbar .link_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+}
+
+.navbar .links_navbar .itemOne,
+.navbar .links_navbar .itemTwo,
+.navbar .link_navbar .itemOne,
+.navbar .link_navbar .itemTwo {
+    padding: 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    font-size: 1.1rem;
+    letter-spacing: 2.55px;
+}
+
+.navbar .links_navbar .itemOne img,
+.navbar .links_navbar .itemTwo img,
+.navbar .link_navbar .itemOne img,
+.navbar .link_navbar .itemTwo img {
+    margin-right: 10px;
+}
+
+.navbar .links_navbar .itemOne,
+.navbar .link_navbar .itemOne {
+    background-color: #72EFDB;
+    color: #0B1741;
+}
+
+.navbar .links_navbar .itemTwo,
+.navbar .link_navbar .itemTwo {
+    background-color: #1E3E7B;
+    color: white;
+}
+
+/*------------------Media Queries------------------*/
+
+@media screen and (max-width: 620px) {
+    .navbar {
+        height: 70px;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    .navbar .linkImgHome img {
+        height: 40px;
+    }
+
+    .navbar .links_navbar {
+        width: 280px;
+    }
+
+    .navbar .links_navbar .itemOne,
+    .navbar .links_navbar .itemTwo,
+    .navbar .link_navbar .itemOne,
+    .navbar .link_navbar .itemTwo {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar .linkImgHome img {
+        height: 23px;
+    }
+
+    .navbar .links_navbar {
+        width: 220px;
+    }
+
+    .navbar .links_navbar .itemOne,
+    .navbar .links_navbar .itemTwo,
+    .navbar .link_navbar .itemOne,
+    .navbar .link_navbar .itemTwo {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .navbar .links_navbar .itemOne {
+        margin-right: 10px;
+    }
+}
