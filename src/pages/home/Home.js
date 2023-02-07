@@ -44,7 +44,7 @@ const Home = () => {
             "records": [
                 {
                     "fields": {
-                        "Squad": "09-22",
+                        "Squad": "09-22-Fabio",
                         "Hashtag": hashtag,
                         "Data": timeStamp(),
                     }
