@@ -1,0 +1,324 @@
+/*---------------Header---------------*/
+
+.header {
+    height: 90vh;
+    width: 100vw;
+    background: url(../../assets/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .headerContent {
+    width: 75%;
+    height: calc(100vh - 90px);
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.header .headerContent .titles h1 {
+    margin-top: 200px;
+    font-size: 3.5rem;
+    width: 60%;
+    color: #FFF;
+    font-weight: 700;
+    opacity: 1;
+    letter-spacing: 1.6px;
+}
+
+.header .headerContent .titles h2 {
+    font-weight: 400;
+    width: 50%;
+    color: #FFF;
+}
+
+/*---------------Search Input---------------*/
+
+.header .headerContent form {
+    margin: 25vh auto 0;
+    width: 60%;
+    max-width: 860px;
+    display: flex;
+    background-color: #1E3E7B;
+    border-radius: 100px;
+}
+
+.header .headerContent form button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header .headerContent form button img {
+    padding: 25px;
+}
+
+.header .headerContent form .inputSearch {
+    height: 100%;
+    width: calc(100% - 30px);
+    font-size: 2rem;
+    color: #FFFFFF;
+    border: none;
+    background-color: transparent;
+}
+
+.header .headerContent form .inputSearch::placeholder {
+    color: var(--gray);
+    font-size: 2rem;
+}
+
+/*---------------Home Content---------------*/
+
+.mobileTabs {
+    margin-top: -150px;
+    height: 350px;
+    background-image: linear-gradient(to bottom, transparent 0%, #0A1744 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileTabs .changingResults {
+    display: none;
+}
+
+.homeContent {
+    margin-top: -75px;
+    width: 100vw;
+    background-color: #0A1744;
+}
+
+.homeContent h2 {
+    color: #FFFFFF;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.homeContent ul li {
+    list-style: none;
+}
+
+.homeContent .content {
+    margin: auto;
+    padding: 80px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.homeContent .contentResponsive {
+    display: none;
+}
+
+.homeContent .content .imagesResults {
+    width: 41%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeContent .content .imagesResults ul {
+    width: 100%;
+}
+
+.homeContent .content .imagesResults ul li {
+    display: inline-table;
+}  
+
+.homeContent .content .tweetsResults {
+    width: 55%;
+}
+
+/* ---------------Media Queries--------------- */
+
+@media only screen and (max-width: 1400px) {
+    .header .headerContent .titles h1 {
+        width: 60%;
+    }
+
+    .header .headerContent .titles h2 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header {
+        height: 90vh;
+        width: 100vw;
+        background: url(../../assets/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .homeContent h2 {
+        padding-top: 100px;
+    }
+
+    .header .headerContent .titles h1 {
+        width: 73%;
+    }
+
+    .header .headerContent .titles h2 {
+        width: 61%;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .homeContent .content {
+        width: 100%;
+    }
+
+    .header .headerContent .titles h1 {
+        width: 98%;
+    }
+
+    .header .headerContent .titles h2 {
+        width: 81%;
+    }
+
+    .homeContent .content .imagesResults {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .homeContent .content .tweetsResults {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    .header .headerContent .titles h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .headerContent .titles h2 {
+        font-size: 1.5rem;
+    }
+
+    .header .headerContent form button img {
+        padding: 15px;
+    }
+
+    .header .headerContent form .inputSearch,
+    .header .headerContent form .inputSearch::placeholder {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .header .headerContent,
+    .header .headerContent, .titles,
+    .header .headerContent, .titles h1,
+    .header .headerContent, .titles h2,
+    .header .headerContent, form {
+        width: 90%;
+    }
+
+    .mobileTabs .changingResults {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+    }
+
+    .mobileTabs .changingResults span {
+        padding: 10px 0 7px;
+        width: 40%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .mobileTabs .tabs {
+        margin-top: 5px;
+        width: 80%;
+        height: 2px;
+        background-color: #41558E;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobileTabs .tabs div {
+        width: 50%;
+        height: 4px;
+        background-color: #72EFDB;
+        border-radius: 100px;
+        transition: all 0.5s;
+    }
+
+    .homeContent h2,
+    .homeContent .content {
+        display: none;
+    }
+
+    .homeContent .contentResponsive {
+        width: 100%;
+        display: block;
+    }
+
+    .homeContent .contentResponsive .imagesResults {
+        padding: 100px 0 70px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeContent .contentResponsive .imagesResults ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .homeContent .contentResponsive .imagesResults ul li {
+        display: inline-table;
+    }
+
+    .homeContent .contentResponsive .tweetsResults {
+        padding: 100px 0 70px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .header {
+        background: url(../../assets/mobile-hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header .headerContent {
+        justify-content: flex-start;
+    }
+
+    .header .headerContent .titles h1 {
+        margin-top: 120px;
+        font-size: 1.9rem;
+        width: 100%;
+    }
+
+    .header .headerContent .titles h2 {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .header .headerContent form {
+        margin: 70px auto 0;
+    }
+
+    .header .headerContent form button img {
+        padding: 15px;
+        width: 50px;
+    }
+
+    .header .headerContent form .inputSearch,
+    .header .headerContent form .inputSearch::placeholder {
+        font-size: 1.1rem;
+    }
+}
