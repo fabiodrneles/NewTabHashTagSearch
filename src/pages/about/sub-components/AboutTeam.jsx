@@ -20,7 +20,7 @@ const AboutTeam = () => {
         fetch("https://api.airtable.com/v0/app6wQWfM6eJngkD4/Equipe?fields%5B%5D=Squad&fields%5B%5D=Nome&fields%5B%5D=Email&fields%5B%5D=Descrição&fields%5B%5D=Imagem&fields%5B%5D=Github&fields%5B%5D=LinkedIn", requestOptions)
             .then(response => response.json())
             .then(result => {
-                const filteredTeam = result.records?.filter((item) => item.fields.Squad === '09-22')
+                const filteredTeam = result.records?.filter((item) => item.fields.Squad === '09-22-Fabio')
                 setInfoTeam(filteredTeam)
             })
             .catch(error => console.log('error', error));
@@ -28,7 +28,7 @@ const AboutTeam = () => {
 
     return (
         <section className="about-team">
-            <h2 className="about-team__title">Quem somos</h2>
+            <h2 className="about-team__title">Sobre o Dev.</h2>
             <div className="about-team__members">
                 {infoTeam?.map((member, index) => (
                     <AboutMembers
