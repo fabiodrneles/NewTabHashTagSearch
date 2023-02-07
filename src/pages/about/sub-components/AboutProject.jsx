@@ -22,7 +22,7 @@ const AboutProject = () => {
       fetch("https://api.airtable.com/v0/app6wQWfM6eJngkD4/Projeto?fields%5B%5D=Squad&fields%5B%5D=Sobre", requestOptions)
         .then(response => response.json())
         .then(result => {
-            const filtered = result.records.filter((item)  => item.id === "recGpJ5rBZs2YkRYF")
+            const filtered = result.records.filter((item)  => item.id === "recjVTOqAve5YDzhk")
             setInfo(filtered[0].fields.Sobre)
           })
         .catch(error => console.log('error', error));    
