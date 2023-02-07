@@ -48,7 +48,7 @@ const LoginArea = () => {
                     let dataSquad  = resp.data.records
                     
                     dataSquad.filter(squad => {
-                        if (squad.fields.Squad === '09-22' & values.email === squad.fields.Email & values.password === squad.fields.Senha) {
+                        if (squad.fields.Squad === '09-22-Fabio' & values.email === squad.fields.Email & values.password === squad.fields.Senha) {
                             logged = true;
                             return true
                         } return false
