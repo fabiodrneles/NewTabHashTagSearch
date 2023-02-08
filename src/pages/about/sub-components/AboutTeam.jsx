@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 //componentes
 import AboutMembers from './AboutMembers';
 
